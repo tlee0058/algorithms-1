@@ -6,7 +6,7 @@ and return the highest value in the array.*/
 function lowHigh(arr){
     var high = arr[0];
     var low = arr[0];
-    for (var i = 1; i < arr.length-1; i++){
+    for (var i = 1; i < arr.length; i++){
         
         if (arr[i]<low){
             low = arr[i];
