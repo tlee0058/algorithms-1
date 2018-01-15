@@ -10,9 +10,11 @@ function valuesSecond(arr){
         if(arr[i]>arr[1]){
             newarr.push(arr[i]);
         }
+        
     }
-    console.log(newarr);
-    console.log(newarr.length);
-};
-valuesSecond([1,2,3,4,5]);
-valuesSecond([1]);
+    return newarr;
+    
+}
+console.log(valuesSecond([1,2,3,4,5]));
+console.log(valuesSecond([1]));
+
