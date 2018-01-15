@@ -1,0 +1,12 @@
+/*Scale the Array
+Given an array arr and a number num, multiply all values in arr by num, and return the changed array arr. */
+
+function scaleArray(arr, num){
+    var newarr = [];
+    for (var i = 0; i < arr.length; i++){
+        newarr.push(arr[i]*num);
+    }
+    return newarr;
+}
+
+console.log(scaleArray([1,2,3,4], 2));
