@@ -23,5 +23,5 @@ function lowHigh(arr){
 
 }
 lowHigh([1,4,6,2,9]);
-
+console.log(lowHigh([1,4,6,2,9]));
 
