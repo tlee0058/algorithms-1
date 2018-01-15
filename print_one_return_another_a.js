@@ -9,10 +9,11 @@ function printAnother(arr){
     
     for(var i = 0; i<arr.length; i++){
         if(arr[i] % 2 !== 0){
+            
             return arr[i];
         }
         
 }}
-printAnother([2,3,5,8,9,4]);
+console.log(printAnother([2,3,5,8,9,4]));
 
 
