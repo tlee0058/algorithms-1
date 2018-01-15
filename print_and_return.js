@@ -2,10 +2,9 @@
 Your function will receive an array with two numbers. 
 Print the first value, and return the second.*/
 
-function print_and_return(x,y){
-    var arr = [];
-    arr.push(x);
-    arr.push(y);
-    console.log(arr);
+function print_and_return(arr){
+    console.log(arr[0]);
+    return arr[1];
+    
 }
-print_and_return(1,2);
+console.log(print_and_return([1,2]));
