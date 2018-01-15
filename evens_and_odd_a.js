@@ -7,11 +7,11 @@ print "Even more so!" */
 function evensOdd(arr){
     for(var i = 0; i < arr.length; i++){
         if(arr[i] % 2 !== 0 && arr[i+1] % 2 !== 0 && arr[i+2] % 2 !== 0){
-            console.log("That's Odd!");
+            return ("That's Odd!");
         }
         else if(arr[i] % 2 === 0 && arr[i+1] % 2 === 0 && arr[i+2] % 2 === 0){
-            console.log("Even more so!");
+            return ("Even more so!");
         }
     }
 }
-evensOdd([1,3,5,7,8]);
+console.log(evensOdd([1,2,4,6,8]));
