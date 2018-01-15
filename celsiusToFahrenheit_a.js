@@ -10,18 +10,15 @@ try a series of Celsius integer values starting at 200, going downward
 Fahrenheit value.*/
 
 function celsiusToFahrenheit(cDegrees){
-    var Fahrenheit = (9/5 * cDegrees) + 32;
-    console.log(Fahrenheit);
+    var fahrenheit = (9/5 * cDegrees) + 32;
+    return fahrenheit;
 }
 
-celsiusToFahrenheit(37);
-//Optional
-
-
-for(var c = 200; c>-200; c--){
-    var Fahrenheit = (9/5 * c) + 32;
-    if(Fahrenheit == c){
-        console.log(c);
-    }
+    
+for(var i = 200; i > 0; i--){
+    if(i == celsiusToFahrenheit(i)){
+        console.log(i);
+        }
 }
+   
 
