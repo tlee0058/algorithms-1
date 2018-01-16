@@ -15,7 +15,7 @@ function celsiusToFahrenheit(cDegrees){
 }
 
     
-for(var i = 200; i > 0; i--){
+for(var i = 400; i > -400; i--){
     if(i == celsiusToFahrenheit(i)){
         console.log(i);
         }
