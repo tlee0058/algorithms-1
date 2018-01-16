@@ -1,0 +1,30 @@
+/*Poor Kenny
+Kenny tries to stay safe, but somehow everyday something happens. 
+If there is a 10% chance of volcano, 15% chance of tsunami, 20% chance 
+of earthquake, 25% chance of blizzard, and 30% chance of meteor strike, 
+write function whatHappensToday() to print the outcome.*/
+
+function whatHappensToday(){
+    var number = Math.random() * 100; 
+    var outcome = "";
+
+    if (number < 11 && number > -1){
+        outcome = "volcano";
+    }
+    else if (number < 26 && number > 10 ){
+        outcome = "tsunami";
+    }
+    else if (number < 46 && number > 25){
+        outcome = "earthquake";
+    } 
+    else if (number < 71 && number > 45){
+        outcome = "blizzard";
+    }
+    else if (number < 101 && number > 70){
+        outcome = "meteor strike";
+    }
+
+    console.log(outcome);
+};
+
+whatHappensToday();
