@@ -4,17 +4,17 @@ Given array, swap first and last, third and third-tolast, etc. Input[true,42,"Ad
 
 function swapCenter(arr){
     
-    for (var i = 0; i < arr.length; i++){
+    for (var i = 0; i < arr.length/2; i+=2){
         var temp = arr[i];
-        if(i % 2 === 0){
+        
             
-            arr[i] = arr[arr.length-1-i];
-            arr[arr.length-1-i] = temp;
-        }
-        
-        
+        arr[i] = arr[arr.length-1-i];
+        arr[arr.length-1-i] = temp;
     }
-    console.log(arr);
+    return arr;
+    
 }
+console.log(swapCenter([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]));
 
-swapCenter([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]);
+
+
